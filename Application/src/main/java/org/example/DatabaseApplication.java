@@ -172,6 +172,8 @@ public class DatabaseApplication {
             //retrieve all students
             if(Objects.equals(userInput, "1")) {
                 dbApp.getAllStudents();
+
+                System.out.print("\n");
             }
 
             //add a student
@@ -200,12 +202,14 @@ public class DatabaseApplication {
                 System.out.print("\n");
 
                 //Get student's enrollment date
-                System.out.print("Enter student's enrollment date: > ");
+                System.out.print("Enter student's enrollment date (yyyy-mm-dd): > ");
                 enrollmentDate = scanner.nextLine();
 
                 System.out.print("\n");
 
                 dbApp.addStudent(firstName, lastName, email, enrollmentDate);
+
+                System.out.print("\n");
             }
 
             //update a student's email
@@ -226,6 +230,8 @@ public class DatabaseApplication {
                 System.out.print("\n");
 
                 dbApp.updateStudentEmail(id, email);
+
+                System.out.print("\n");
             }
 
             //delete a student
@@ -239,10 +245,14 @@ public class DatabaseApplication {
                 System.out.print("\n");
 
                 dbApp.deleteStudent(id);
+
+                System.out.print("\n");
             }
 
             else {
                 System.out.println("Input not recognized.");
+
+                System.out.print("\n");
             }
 
 
@@ -250,14 +260,17 @@ public class DatabaseApplication {
             System.out.println("Would you like to perform another operation? (y/n)");
             userInput = scanner.nextLine();
             if(Objects.equals(userInput, "y")) {
+                System.out.print("\n");
                 continue;
             }
             else if(Objects.equals(userInput, "n")) {
+                System.out.print("\n");
                 System.out.println("Thank you for using this application, have a great day!");
                 scanner.close();
                 keepRunning = false;
             }
             else {
+                System.out.print("\n");
                 System.out.println("Unrecognized input. Terminating program.");
                 scanner.close();
                 keepRunning = false;
