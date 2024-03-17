@@ -1,14 +1,13 @@
 Comp3005 - Assignment 3: Question 1
 --
 
----
 **Author:** Hajar Alyemni   
 **Date:** March 18th, 2024  
 **Demo video link:** 
+
 ---
 ## Set-Up Instructions:  
 
----
 
 ### Creating and populating the database:
 >    1. Download the database creation scripts from the GitHub repository  
@@ -24,7 +23,7 @@ Comp3005 - Assignment 3: Question 1
 
 The database should now contain the required tables and data.
 
----
+
 ### Running the application:  
 >   1. Download the application source code from the GitHub repository  
 >   2. Save the source code files in a directory of your choice
