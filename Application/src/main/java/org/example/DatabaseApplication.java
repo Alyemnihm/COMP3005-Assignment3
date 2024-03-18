@@ -7,11 +7,21 @@ import java.util.Scanner;
 
 public class DatabaseApplication {
 
+    /*
+     * Database information needed to establish connection
+     *
+     * NOTE: You will need to update these variables according to your own database if you decide to run the program on your machine:
+     *      url = "jdbc:postgresql://localhost:<PORT NUMBER>/<DATABASE NAME>"
+     *      user = <POSTGRES USERNAME>
+     *      password = <POSTGRES PASSWORD>
+     */
     private final String url = "jdbc:postgresql://localhost:5432/Assignment3";
     private final String user = "postgres";
     private final String password = "password1234";
 
-    //Database operation methods
+
+
+    // --- DATABASE OPERATION METHODS -------------------------------------------------------------
 
     /*
      * Function: getAllStudents
@@ -110,6 +120,9 @@ public class DatabaseApplication {
         }
     }
 
+
+    // --- HELPER FUNCTIONS -------------------------------------------------------------
+
     /*
      * Function: printResultSet
      * Prints the results of a query
@@ -149,6 +162,9 @@ public class DatabaseApplication {
         System.out.println("-------------");
     }
 
+
+    // --- MAIN FUNCTION ---------------------------------------------------------------
+
     public static void main(String[] args) {
 
         DatabaseApplication dbApp = new DatabaseApplication();
@@ -156,6 +172,7 @@ public class DatabaseApplication {
 
         boolean keepRunning = true;
         String userInput;
+
         while(keepRunning) {
 
             System.out.println("Which of the following operations would you like to preform?");
@@ -171,6 +188,7 @@ public class DatabaseApplication {
 
             //retrieve all students
             if(Objects.equals(userInput, "1")) {
+                //call function to retrieve and print all students
                 dbApp.getAllStudents();
 
                 System.out.print("\n");
@@ -207,6 +225,7 @@ public class DatabaseApplication {
 
                 System.out.print("\n");
 
+                //call function to add student
                 dbApp.addStudent(firstName, lastName, email, enrollmentDate);
 
                 System.out.print("\n");
@@ -229,6 +248,7 @@ public class DatabaseApplication {
 
                 System.out.print("\n");
 
+                //call function to update student email
                 dbApp.updateStudentEmail(id, email);
 
                 System.out.print("\n");
@@ -244,6 +264,7 @@ public class DatabaseApplication {
 
                 System.out.print("\n");
 
+                //delete a student
                 dbApp.deleteStudent(id);
 
                 System.out.print("\n");
@@ -259,17 +280,17 @@ public class DatabaseApplication {
             //Ask user if they'd like to perform another operation
             System.out.println("Would you like to perform another operation? (y/n)");
             userInput = scanner.nextLine();
-            if(Objects.equals(userInput, "y")) {
+            if(Objects.equals(userInput, "y")) { //if yes, continue while loop
                 System.out.print("\n");
                 continue;
             }
-            else if(Objects.equals(userInput, "n")) {
+            else if(Objects.equals(userInput, "n")) { //if no, exit program
                 System.out.print("\n");
                 System.out.println("Thank you for using this application, have a great day!");
                 scanner.close();
                 keepRunning = false;
             }
-            else {
+            else { //if user inputted any other input, exit program
                 System.out.print("\n");
                 System.out.println("Unrecognized input. Terminating program.");
                 scanner.close();
