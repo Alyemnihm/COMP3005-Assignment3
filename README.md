@@ -6,6 +6,28 @@ Comp3005 - Assignment 3: Question 1
 **Demo video link:** 
 
 ---
+<br/>
+
+## Included Files:  
+
+**Application**  
+- src  
+    - main  
+        - java  
+            - org  
+                - example
+                    - DatabaseApplication.java
+- .gitignore
+- pom.xml  
+
+**Database scripts**
+- ddl.sql
+- dml.sql  
+
+**README.md**
+
+<br/>
+
 ## Set-Up Instructions:  
 
 
@@ -21,14 +43,14 @@ Comp3005 - Assignment 3: Question 1
 >    9. Execute the script   
 >    10. Repeat steps 6-9 with the file named 'dml.sql'  
 
-The database should now contain the required tables and data.
-
+The database should now contain the required tables and data.  
+<br/>
 
 ### Running the application:  
 >   1. Download the application source code from the GitHub repository  
 >   2. Save the source code files in a directory of your choice
 >   3. Open IntelliJ IDEA 
->   4. Open the application by selecting File > Open and then navigating to the appropriate directory
+>   4. Open the project by selecting File > Open and then navigating to the appropriate directory
 >   5. Run the code 
 
 The application should start running, and the user will be able to interact with it via the console.
