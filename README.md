@@ -10,21 +10,9 @@ Comp3005 - Assignment 3: Question 1
 
 ## Included Files:  
 
-**Application**  
-- src  
-    - main  
-        - java  
-            - org  
-                - example
-                    - DatabaseApplication.java
-- .gitignore
-- pom.xml  
-
-**Database scripts**
-- ddl.sql
-- dml.sql  
-
-**README.md**
+- **Application**: directory containing application source code  
+- **Database scripts**: directory containing database scripts needed to create and populate tables  
+- **README.md**
 
 <br/>
 
