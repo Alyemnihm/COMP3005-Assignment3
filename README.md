@@ -39,7 +39,8 @@ The database should now contain the required tables and data.
 >   2. Save the source code files in a directory of your choice
 >   3. Open IntelliJ IDEA 
 >   4. Open the project by selecting File > Open and then navigating to the appropriate directory
->   5. Run the code 
+>   5. Update database connection variables according to your machine
+>   6. Run the code 
 
 The application should start running, and the user will be able to interact with it via the console.
 
